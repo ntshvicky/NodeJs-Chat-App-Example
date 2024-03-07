@@ -66,6 +66,19 @@ app.get('/ex5', async function(req, res) {
 
 // open help.html page
 app.get('/help', function(req, res) {
+    // Access query string parameters - for an example only
+    const name = req.query.name;
+    const age = req.query.age;
+    console.log(name, age);
+    
+    res.sendFile(__dirname + '/public/help.html');
+});
+
+app.get('/help/:userId', function(req, res) {
+    // Access URL parameters - for an example only
+    const userId = req.params.userId;
+    console.log(userId);
+    
     res.sendFile(__dirname + '/public/help.html');
 });
 
