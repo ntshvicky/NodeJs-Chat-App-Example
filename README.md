@@ -13,3 +13,7 @@
     now update package.json script array for test key
     write test code in spec/server.spec.js
 11. install request to send request - npm install -s request
+
+
+## here i have also used some example for basic queries to access
+like how to access URL parameter and query string
